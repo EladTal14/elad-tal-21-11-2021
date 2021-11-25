@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/elad-tal-21-11-2021/static/css/main.4f8706b9.chunk.css",
-    "main.js": "/elad-tal-21-11-2021/static/js/main.da6ca557.chunk.js",
-    "main.js.map": "/elad-tal-21-11-2021/static/js/main.da6ca557.chunk.js.map",
+    "main.js": "/elad-tal-21-11-2021/static/js/main.5eeb7f0a.chunk.js",
+    "main.js.map": "/elad-tal-21-11-2021/static/js/main.5eeb7f0a.chunk.js.map",
     "runtime-main.js": "/elad-tal-21-11-2021/static/js/runtime-main.685bbac7.js",
     "runtime-main.js.map": "/elad-tal-21-11-2021/static/js/runtime-main.685bbac7.js.map",
     "static/js/2.2c9880e5.chunk.js": "/elad-tal-21-11-2021/static/js/2.2c9880e5.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.685bbac7.js",
     "static/js/2.2c9880e5.chunk.js",
     "static/css/main.4f8706b9.chunk.css",
-    "static/js/main.da6ca557.chunk.js"
+    "static/js/main.5eeb7f0a.chunk.js"
   ]
 }
