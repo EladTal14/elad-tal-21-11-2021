@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/weather-app/static/css/main.4f8706b9.chunk.css",
-    "main.js": "/weather-app/static/js/main.7accace3.chunk.js",
-    "main.js.map": "/weather-app/static/js/main.7accace3.chunk.js.map",
-    "runtime-main.js": "/weather-app/static/js/runtime-main.76290d09.js",
-    "runtime-main.js.map": "/weather-app/static/js/runtime-main.76290d09.js.map",
-    "static/js/2.18fe0ed1.chunk.js": "/weather-app/static/js/2.18fe0ed1.chunk.js",
-    "static/js/2.18fe0ed1.chunk.js.map": "/weather-app/static/js/2.18fe0ed1.chunk.js.map",
-    "index.html": "/weather-app/index.html",
-    "static/css/main.4f8706b9.chunk.css.map": "/weather-app/static/css/main.4f8706b9.chunk.css.map",
-    "static/js/2.18fe0ed1.chunk.js.LICENSE.txt": "/weather-app/static/js/2.18fe0ed1.chunk.js.LICENSE.txt",
-    "static/media/crescent-moon-svgrepo-com.9ff1a034.svg": "/weather-app/static/media/crescent-moon-svgrepo-com.9ff1a034.svg",
-    "static/media/heart.de70e8ec.svg": "/weather-app/static/media/heart.de70e8ec.svg",
-    "static/media/lights-sun-svgrepo-com.29d53e52.svg": "/weather-app/static/media/lights-sun-svgrepo-com.29d53e52.svg"
+    "main.css": "/elad-tal-21-11-2021/static/css/main.4f8706b9.chunk.css",
+    "main.js": "/elad-tal-21-11-2021/static/js/main.da6ca557.chunk.js",
+    "main.js.map": "/elad-tal-21-11-2021/static/js/main.da6ca557.chunk.js.map",
+    "runtime-main.js": "/elad-tal-21-11-2021/static/js/runtime-main.685bbac7.js",
+    "runtime-main.js.map": "/elad-tal-21-11-2021/static/js/runtime-main.685bbac7.js.map",
+    "static/js/2.2c9880e5.chunk.js": "/elad-tal-21-11-2021/static/js/2.2c9880e5.chunk.js",
+    "static/js/2.2c9880e5.chunk.js.map": "/elad-tal-21-11-2021/static/js/2.2c9880e5.chunk.js.map",
+    "index.html": "/elad-tal-21-11-2021/index.html",
+    "static/css/main.4f8706b9.chunk.css.map": "/elad-tal-21-11-2021/static/css/main.4f8706b9.chunk.css.map",
+    "static/js/2.2c9880e5.chunk.js.LICENSE.txt": "/elad-tal-21-11-2021/static/js/2.2c9880e5.chunk.js.LICENSE.txt",
+    "static/media/crescent-moon-svgrepo-com.9ff1a034.svg": "/elad-tal-21-11-2021/static/media/crescent-moon-svgrepo-com.9ff1a034.svg",
+    "static/media/heart.de70e8ec.svg": "/elad-tal-21-11-2021/static/media/heart.de70e8ec.svg",
+    "static/media/lights-sun-svgrepo-com.29d53e52.svg": "/elad-tal-21-11-2021/static/media/lights-sun-svgrepo-com.29d53e52.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.76290d09.js",
-    "static/js/2.18fe0ed1.chunk.js",
+    "static/js/runtime-main.685bbac7.js",
+    "static/js/2.2c9880e5.chunk.js",
     "static/css/main.4f8706b9.chunk.css",
-    "static/js/main.7accace3.chunk.js"
+    "static/js/main.da6ca557.chunk.js"
   ]
 }
