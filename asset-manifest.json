@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/elad-tal-21-11-2021/static/css/main.4f8706b9.chunk.css",
-    "main.js": "/elad-tal-21-11-2021/static/js/main.9e2de043.chunk.js",
-    "main.js.map": "/elad-tal-21-11-2021/static/js/main.9e2de043.chunk.js.map",
+    "main.js": "/elad-tal-21-11-2021/static/js/main.ef5d5404.chunk.js",
+    "main.js.map": "/elad-tal-21-11-2021/static/js/main.ef5d5404.chunk.js.map",
     "runtime-main.js": "/elad-tal-21-11-2021/static/js/runtime-main.685bbac7.js",
     "runtime-main.js.map": "/elad-tal-21-11-2021/static/js/runtime-main.685bbac7.js.map",
-    "static/js/2.1acb9334.chunk.js": "/elad-tal-21-11-2021/static/js/2.1acb9334.chunk.js",
-    "static/js/2.1acb9334.chunk.js.map": "/elad-tal-21-11-2021/static/js/2.1acb9334.chunk.js.map",
+    "static/js/2.32209a19.chunk.js": "/elad-tal-21-11-2021/static/js/2.32209a19.chunk.js",
+    "static/js/2.32209a19.chunk.js.map": "/elad-tal-21-11-2021/static/js/2.32209a19.chunk.js.map",
     "index.html": "/elad-tal-21-11-2021/index.html",
     "static/css/main.4f8706b9.chunk.css.map": "/elad-tal-21-11-2021/static/css/main.4f8706b9.chunk.css.map",
-    "static/js/2.1acb9334.chunk.js.LICENSE.txt": "/elad-tal-21-11-2021/static/js/2.1acb9334.chunk.js.LICENSE.txt",
+    "static/js/2.32209a19.chunk.js.LICENSE.txt": "/elad-tal-21-11-2021/static/js/2.32209a19.chunk.js.LICENSE.txt",
     "static/media/heart.de70e8ec.svg": "/elad-tal-21-11-2021/static/media/heart.de70e8ec.svg",
     "static/media/moon.9ff1a034.svg": "/elad-tal-21-11-2021/static/media/moon.9ff1a034.svg",
     "static/media/sun.29d53e52.svg": "/elad-tal-21-11-2021/static/media/sun.29d53e52.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.685bbac7.js",
-    "static/js/2.1acb9334.chunk.js",
+    "static/js/2.32209a19.chunk.js",
     "static/css/main.4f8706b9.chunk.css",
-    "static/js/main.9e2de043.chunk.js"
+    "static/js/main.ef5d5404.chunk.js"
   ]
 }
