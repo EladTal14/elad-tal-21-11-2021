@@ -6,7 +6,6 @@ import styled from "styled-components";
 import {useAppDispatch, useAppSelector} from "../../app/hooks";
 import {changeCity, getLocationAsync} from "../../features/location/locationSlice";
 import {CircularProgress} from "@mui/material";
-import {getTempOneDaySync} from "../../features/temparture/tempSlice";
 
 type IProps = {
   label: string;
@@ -16,6 +15,7 @@ export const AutocompleteInput: React.VFC<IProps> = ({label}) => {
   const [searchTerm, setSearchTerm] = useState('')
   const debouncedSearchTerm = useDebounce({value: searchTerm.trim(), delay: 500});
   const dispatch = useAppDispatch();
+  const {theme} = useAppSelector(state => state.util)
   const {value: cities, status} = useAppSelector(state => state.location);
   const [error, setError] = useState('')
 
@@ -45,6 +45,7 @@ export const AutocompleteInput: React.VFC<IProps> = ({label}) => {
 
   return (
     <StyledAutoComplete
+      theme={theme}
       disablePortal
       options={cities as any}
       sx={{width: 300}}
@@ -81,7 +82,13 @@ export const AutocompleteInput: React.VFC<IProps> = ({label}) => {
 
 const StyledAutoComplete = styled(Autocomplete)`
   && {
+    color: ${props => props.theme !== 'dark' ? 'white' : 'black'};
     padding-top: 20px;
     align-self: center;
+  }
+
+  & .MuiOutlinedInput-root {
+    background-color: ${props => props.theme !== 'dark' ? 'white' : 'gray'};
+    transition: background-color 0.3s linear;
   }
 `;

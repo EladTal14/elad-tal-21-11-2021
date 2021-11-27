@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import styled from "styled-components";
 import {Button, Typography} from "@mui/material";
 import sun from '../../assets/images/sun.svg'
@@ -9,16 +9,17 @@ import {SwitchDarkMode} from "../switch/switch";
 import {UnitScale} from "../../enum/unit-scale";
 import {Pages} from "../../enum/pages";
 
-export const Header: React.VFC<{ onPageChange: (userPage: string) => void }> = ({onPageChange}) => {
+export const Header: React.VFC<{ onPageChange: (userPage: string) => void }> = ({
+                                                                                  onPageChange,
+                                                                                }) => {
   const dispatch = useAppDispatch()
   const {value: scaleUnit} = useAppSelector(state => state.temp)
-  const [mode, setMode] = useState('light')
-
+  const {theme} = useAppSelector(state => state.util)
   return (
-    <StyledHeader>
+    <StyledHeader theme={theme}>
       <div className="logo">
 
-        <img src={mode === "light" ? sun : moon} alt="logo"/>
+        <img src={theme === "light" ? sun : moon} alt="logo"/>
         <StyledTypography variant="h5">
           Weather
         </StyledTypography>
@@ -30,8 +31,9 @@ export const Header: React.VFC<{ onPageChange: (userPage: string) => void }> = (
         <SwitchDarkMode/>
       </div>
       <div className="buttons">
-        <StyledButton variant="outlined" onClick={() => onPageChange(Pages.Home)}>Home</StyledButton>
-        <StyledButton variant="outlined" onClick={() => onPageChange(Pages.Favourites)}>Favourites</StyledButton>
+        <StyledButton  variant="outlined" onClick={() => onPageChange(Pages.Home)}>Home</StyledButton>
+        <StyledButton  variant="outlined"
+                      onClick={() => onPageChange(Pages.Favourites)}>Favourites</StyledButton>
       </div>
 
     </StyledHeader>
@@ -59,18 +61,15 @@ const StyledHeader = styled.div`
     max-height: 70px;
     height: auto;
     padding-right: 6px;
-    transition: filter 0.5s linear;
+    transition: filter 0.3s linear;
+    filter: invert(${props => props.theme === 'light' ? 1 : 0});
 
-    &:hover {
-      cursor: pointer;
-      filter: invert(1);
-    }
   }
 
 `;
 const StyledButton = styled(Button)`
   && {
-    color: #2e267b;
+    color: ${props => props.theme === 'light' ? 'white' : '#2e267b'};
     border: 1px solid #2e267b;
     margin-right: 3px;
   }

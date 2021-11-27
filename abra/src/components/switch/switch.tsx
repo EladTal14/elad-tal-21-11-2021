@@ -1,6 +1,8 @@
 import clsx from 'clsx';
 import {styled} from '@mui/system';
 import {useSwitch, UseSwitchProps} from '@mui/base/SwitchUnstyled';
+import {useAppDispatch, useAppSelector} from "../../app/hooks";
+import {changeTheme} from "../../features/utilSlice";
 
 const SwitchRoot = styled('span')`
   display: inline-block;
@@ -71,6 +73,8 @@ const SwitchTrack = styled('span')(
 );
 
 const MUISwitch = (props: UseSwitchProps) => {
+  const dispatch = useAppDispatch()
+  const {theme} = useAppSelector(state => state.util)
   const {getInputProps, checked, disabled, focusVisible} = useSwitch(props);
   const stateClasses = {
     checked,
@@ -78,8 +82,12 @@ const MUISwitch = (props: UseSwitchProps) => {
     focusVisible,
   };
 
+  const handleThemeSwitch = () => {
+    dispatch(changeTheme(theme === 'dark' ? 'light' : 'dark'))
+  }
+
   return (
-    <SwitchRoot className={clsx(stateClasses)}>
+    <SwitchRoot className={clsx(stateClasses)} onClick={handleThemeSwitch}>
       <SwitchTrack>
         <SwitchThumb className={clsx(stateClasses)}/>
       </SwitchTrack>
@@ -89,5 +97,5 @@ const MUISwitch = (props: UseSwitchProps) => {
 }
 
 export const SwitchDarkMode = () => {
-  return <MUISwitch />;
+  return <MUISwitch/>;
 }
