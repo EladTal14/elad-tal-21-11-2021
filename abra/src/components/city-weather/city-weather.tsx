@@ -31,7 +31,7 @@ export const CityWeather = () => {
   useEffect(() => {
     dispatch(getTempOneDaySync(city.key))
     dispatch(getTempFiveDaySync(city.key))
-  }, [])
+  }, [city.key])
 
   const addRemoveAction = () => {
     if (isFavourite) {
@@ -40,7 +40,7 @@ export const CityWeather = () => {
       dispatch(addFavourite({
         name: city.name,
         key: city.key,
-        temp: temperature,
+        temp: Temperature?.Maximum?.Value,
         behaviour: day.IconPhrase
       }))
     }

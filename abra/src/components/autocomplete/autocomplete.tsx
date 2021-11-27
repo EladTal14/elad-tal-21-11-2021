@@ -31,7 +31,6 @@ export const AutocompleteInput: React.VFC<IProps> = ({label}) => {
   const handleOptionChange = (e: any, a: any) => {
     if (a !== null) {
       dispatch(changeCity({name: a.LocalizedName, key: a.Key}))
-      dispatch(getTempOneDaySync(a.Key))
     }
   }
 

@@ -1,23 +1,32 @@
 import React from "react";
 import {Box, Card, CardContent, Skeleton, Typography} from "@mui/material";
-import {useAppSelector} from "../../app/hooks";
+import {useAppDispatch, useAppSelector} from "../../app/hooks";
 import styled from "styled-components";
 import {farenToCelsius} from "../../services/util";
 import {UnitScale} from "../../enum/unit-scale";
 import {LoadingState} from "../../enum/loading-state";
+import {Pages} from "../../enum/pages";
+import {changeCity} from "../../features/location/locationSlice";
 
 type IProps = {
+  id: string;
   name: string;
   temp: number;
   behaviour: string;
+  onPageChange: (page: string) => void
 }
 
-export const FavouriteCard: React.FC<IProps> = ({name, temp, behaviour}) => {
-  const {value:scaleUnit, status} = useAppSelector(state => state.temp)
+export const FavouriteCard: React.FC<IProps> = ({id, name, temp, behaviour, onPageChange}) => {
+  const dispatch = useAppDispatch()
+  const {value: scaleUnit, status} = useAppSelector(state => state.temp)
   const temperature = scaleUnit === UnitScale.Celsius ? farenToCelsius(temp) : temp
 
+  const handleFavouriteChosen = () => {
+    onPageChange(Pages.Home)
+    dispatch(changeCity({name, key: id}))
+  }
   return (
-    <StyledCard sx={{maxWidth: 200, minWidth: 200}}>
+    <StyledCard sx={{maxWidth: 200, minWidth: 200}} onClick={handleFavouriteChosen}>
       <CardContent>
         {status === LoadingState.Loading ?
           (<Box sx={{width: 150, height: 115}}>
