@@ -1,7 +1,6 @@
 import {useAppSelector} from "../../app/hooks";
 import {FavouriteCard} from "./favourite-card";
 import styled from "styled-components";
-import {Typography} from "@mui/material";
 import React from "react";
 
 export const Favourites: React.VFC<{ onPageChange: (page: string) => void }> = ({onPageChange}) => {
@@ -9,12 +8,11 @@ export const Favourites: React.VFC<{ onPageChange: (page: string) => void }> = (
   const {theme} = useAppSelector(state => state.util)
   if (favourites && !favourites!.length) {
     return (
-      <Typography variant="h6" gutterBottom component="div">
+      <StyledH1>
         You haven`t chosen any city.
-      </Typography>
+      </StyledH1>
     )
   }
-  console.log('favourites', favourites)
   return (
     <>
       <StyledH1 theme={theme}>Favourites</StyledH1>
